@@ -11,7 +11,6 @@
 #include "NoC.h"
 
 using namespace std;
-
 inline int toggleKthBit(int n, int k) 
 { 
     return (n ^ (1 << (k-1))); 
@@ -2373,7 +2372,6 @@ Tile *NoC::searchNode(const int id) const
 	    return core[id];
     return NULL;
 }
-
 void NoC::asciiMonitor()
 {
 	//cout << sc_time_stamp().to_double()/GlobalParams::clock_period_ps << endl;
@@ -2404,4 +2402,3 @@ void NoC::asciiMonitor()
 		}
 	}
 }
-
